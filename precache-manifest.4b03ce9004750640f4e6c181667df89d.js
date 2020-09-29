@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0650c498f5eaca98195e6d7e19eea735",
+    "revision": "64e086e060f708be596357fb7fd203a9",
     "url": "/King-James/index.html"
   },
   {
-    "revision": "f9e3504ce0c285ba389d",
-    "url": "/King-James/static/css/main.02c81e46.chunk.css"
+    "revision": "54956988f1a0af26a17c",
+    "url": "/King-James/static/css/main.6b609eba.chunk.css"
   },
   {
     "revision": "2ffb0a3ad5b2e37d1bb4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/King-James/static/js/2.b49b9114.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9e3504ce0c285ba389d",
+    "revision": "54956988f1a0af26a17c",
     "url": "/King-James/static/js/main.381242ae.chunk.js"
   },
   {
