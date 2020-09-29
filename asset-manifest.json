@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/King-James/static/css/main.5423e770.chunk.css",
+    "main.css": "/King-James/static/css/main.02c81e46.chunk.css",
     "main.js": "/King-James/static/js/main.381242ae.chunk.js",
     "main.js.map": "/King-James/static/js/main.381242ae.chunk.js.map",
     "runtime-main.js": "/King-James/static/js/runtime-main.ddc84664.js",
@@ -8,15 +8,15 @@
     "static/js/2.b49b9114.chunk.js": "/King-James/static/js/2.b49b9114.chunk.js",
     "static/js/2.b49b9114.chunk.js.map": "/King-James/static/js/2.b49b9114.chunk.js.map",
     "index.html": "/King-James/index.html",
-    "precache-manifest.190025ec5a94bc3035874c0203248576.js": "/King-James/precache-manifest.190025ec5a94bc3035874c0203248576.js",
+    "precache-manifest.8d88ef24516ed715a98f2c203f97161d.js": "/King-James/precache-manifest.8d88ef24516ed715a98f2c203f97161d.js",
     "service-worker.js": "/King-James/service-worker.js",
-    "static/css/main.5423e770.chunk.css.map": "/King-James/static/css/main.5423e770.chunk.css.map",
+    "static/css/main.02c81e46.chunk.css.map": "/King-James/static/css/main.02c81e46.chunk.css.map",
     "static/js/2.b49b9114.chunk.js.LICENSE.txt": "/King-James/static/js/2.b49b9114.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ddc84664.js",
     "static/js/2.b49b9114.chunk.js",
-    "static/css/main.5423e770.chunk.css",
+    "static/css/main.02c81e46.chunk.css",
     "static/js/main.381242ae.chunk.js"
   ]
 }
