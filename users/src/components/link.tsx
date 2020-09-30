@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, createContext} from 'react'
 import axios from 'axios'
 
 type Props = {
@@ -9,6 +9,7 @@ type Props = {
     name: string;
     username: string;
   }
+  
   const Link: React.FC<Props> = ({searching,filtered}) => {
     let [users, setUsers] = useState([]);
     useEffect(() => {
