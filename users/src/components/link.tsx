@@ -1,8 +1,8 @@
-import React, {useEffect, useState, createContext} from 'react'
+import React, {useEffect, useState, createContext, Children} from 'react'
 import axios from 'axios'
-import { link } from 'fs';
 
-export const LinkContext = createContext(link);
+
+export const UserContext = React.createContext();
 type Props = {
     searching: string;
     filtered: Function;
@@ -13,7 +13,7 @@ type Props = {
   }
   
   const Link: React.FC<Props> = ({searching,filtered}) => {
-    let [users, setUsers] = useState([]);
+    const [users, setUsers] = useState([]);
     useEffect(() => {
       filtered(
         users.filter((user: User) =>
@@ -30,10 +30,11 @@ type Props = {
         })
     });
     return(
-        <div>
-            
-        </div>
+      <UserContext.Provider value={{Link}}>
+        {Children}
+      </UserContext.Provider>
     )
+    
 }
 
 export default Link;
