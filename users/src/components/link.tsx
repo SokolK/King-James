@@ -1,19 +1,22 @@
-import React, {useEffect, useState, createContext, Children} from 'react'
+import React, {useEffect, useState, createContext, Children, useContext} from 'react'
 import axios from 'axios'
 
 
-export const UserContext = React.createContext();
+
 type Props = {
     searching: string;
     filtered: Function;
   }
-  type User = {
+  interface User = {
     name: string;
     username: string;
   }
+
+  export const UserContext = React.createContext<UserContext | null>(null);
   
+  const [users, setUsers] = useState([]);
   const Link: React.FC<Props> = ({searching,filtered}) => {
-    const [users, setUsers] = useState([]);
+    
     useEffect(() => {
       filtered(
         users.filter((user: User) =>
@@ -21,20 +24,25 @@ type Props = {
         )
       );
     }, [searching, users]);
-    useEffect(() => {
-      axios
-        .get("https://jsonplaceholder.typicode.com/users")
-        .then((res) => {
-          setUsers(res.data);
-        }).catch((err) => {
-        })
-    });
+  
+  
+    const UserContextProvider: User = {
+      useEffect(() => {
+        axios
+          .get("https://jsonplaceholder.typicode.com/users")
+          .then((res) => {
+            setUsers(res.data);
+          }).catch((err) => {
+          })
+      });
+    }
+  }
     return(
-      <UserContext.Provider value={{Link}}>
-        {Children}
+      <UserContext.Provider value={{User}}>
+        {props.Children}
       </UserContext.Provider>
     )
-    
-}
+    }
+
 
 export default Link;

@@ -11,14 +11,11 @@ type Person = {
 const Listusers: React.FC = () => {
     const [userName, setSearchUser] = useState("");
     const [filteredUsers, setFilteredUsers] = useState<Person[]>([]);
-    const user = useContext(UserContext)
     return (
         <div>
-            <UserContext value={{user}}>
                 <Debounce onchange={setSearchUser} />
                 <Link searching={userName} filtered={setFilteredUsers} />
                 <Filter filtered={filteredUsers} />
-            </UserContext>
         </div>
     )
 }
